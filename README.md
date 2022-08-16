@@ -1,32 +1,35 @@
-# Sinatra webapp starter
+# Propuesta de nueva constitución
 
-This is the base code to start a web app with Sinatra. It's ready to push to Heroku app and work with the styles of bootstrap v5.1.3.
+Página web implementada en Sinatra con la propuesta de nueva constitución en inglés para personas que no hablan español.
 
-# Features
-- Use Bootstrap v5.1.3 styles
-- Use Sinatra::Reloader to reload app on code change (doesn’t load new files)
-- Use Byebug, a simple to use debugger for Ruby
-- Use Puma, a small library that provides a very fast and concurrent HTTP 1.1 server for Ruby web applications
+Al hacer click en los artículos, estos pasan de inglés a español.
+
+https://nueva-constitucion.herokuapp.com/
+
+# Fuente de información
+
+El texto viene de la versión Markdown de Eduardo Díaz.
+
+https://github.com/lnds/TextoNuevaConstitucionChilena
+
+Los artículos fueron traducidos usando la API de Google Translate, por lo que pueden haber errores de traducción. Se recibe feedback para mejorarla.
 
 # Setup
-1. download the project
+
+Para montar la página de forma local:
+
+1. Descargar el proyecto
     ```
-    git clone git@github.com:rredlich/sinatra-starter.git
-    cd sinatra-starter
+    git clone git@github.com:rredlich/nueva-constitucion.git
+    cd nueva-constitucion
     ```
 
-2. install dependencies
+2. Instalar dependencias
     ```
     bundle install
     ```
 
-3. run the webapp
+3. Correr la aplicación web
     ```
     bundle exec puma
     ```
-
-# Notes
-If you need to run the Bundle init for any reason, remember to:
-- Change the `gem 'rails'` line to `gem 'sinatra'` in the Gemfile file
-- Add `gem 'puma'` in the Gemfile file
-- Add `x86_64-linux` in the Platform section in the Gemfile.lock file
